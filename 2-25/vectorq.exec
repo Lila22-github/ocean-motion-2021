@@ -1,11 +1,12 @@
 #!/bin/csh
-set dir = ./test/set dhdir = /Users/brownscholar/desktop/Internship/atlantic_data/dh/
-set dendir = /Users/brownscholar/desktop/Internship/atlantic_data/density/
+set dir = ./test/
+set dhdir = /Users/brownscholar/desktop/Internship/atlantic_data/dh/
+set dendir = /Users/brownscholar/desktop/Internship/atlantic_data/dens/
 set auxdir = /Users/brownscholar/desktop/Internship/atlantic_data/aux/
 set outdir = /Users/brownscholar/desktop/Internship/atlantic_data/omega/
 set fileinfo = {$dir}info_pr.dat
-set filedh =  {$dhdir}/dh_930203.txt
-set filest =  {$dendir}/density_930203.txt
+set filedh =  {$dhdir}/geopotential930203.txt
+set filest =  {$dendir}/density930203.txt
 set filestm = {$auxdir}/st0/930203_st0.dat
 set filequ =  {$outdir}/u/930203_qu.gr
 set fileqv =  {$outdir}/v/930203_qv.gr
@@ -14,7 +15,8 @@ set fileqdi = {$auxdir}/qdi/930203_qdi.gr
 ./vectorq.exe << !
 '$fileinfo'	#>>>>>Escribe info file info.dat:
 '$filedh'	#>>>>>Escribe fichero de altura Dinamica:
-'$filest'	#>>>>>Escribe fichero de densidad:'$filestm'	#>>>>>Escribe fichero de densidad promedio:
+'$filest'	#>>>>>Escribe fichero de densidad:
+'$filestm'	#>>>>>Escribe fichero de densidad promedio:
 '$filequ'	#>>>>>Escribe fichero Qu:
 '$fileqv'	#>>>>>Escribe fichero Qv:
 '$fileqdi'	#>>>>>Escribe fichero Qdi:

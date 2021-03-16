@@ -10,6 +10,6 @@ set filew =  {$outdir}w/930203_ww.gr
 ./omegainv.exe << !
 '$fileinfo' 	#>>>>>Escribe info file info.dat:
 '$fileqdi' 	#>>>>>Escribe fichero de Div Q:
-''$filestm'   	#>>>>>Escribe fichero de densidad promedio:
+'$filestm'   	#>>>>>Escribe fichero de densidad promedio:
 'ominput.dat'  #>>>>>Escribe fichero parametros (ominput.dat):
 '$filew'	#>>>>>Escribe fichero Salida W:
