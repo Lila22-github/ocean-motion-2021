@@ -1,0 +1,22 @@
+print("#!/bin/csh")
+
+
+print("set dir = ./ss1a2/")
+print("set fileinfo = ./ss1a2/info_pr.dat")
+print("set filedh =  {$dir}ss1a2dh.gr")
+print("set filest =  {$dir}ss1a2st.gr")
+print("set filestm = {$dir}ss1_st0.dat")
+print("set filegrv = {$dir}ss1a2grv.gr")
+print("set filequ =  {$dir}ss1a2qu.gr")
+print("set fileqv =  {$dir}ss1a2qv.gr")
+print("set fileqdi = {$dir}ss1a2qdi.gr")
+
+print("./vectorq.exe << !")
+print("'$fileinfo'	#>>>>>Escribe info file info.dat:")
+print("'$filedh'	#>>>>>Escribe fichero de altura Dinamica:")
+print("'$filest'	#>>>>>Escribe fichero de densidad:")
+print("'$filestm'	#>>>>>Escribe fichero de densidad promedio:")
+print("'$filequ'	#>>>>>Escribe fichero Qu:")
+print("'$fileqv'	#>>>>>Escribe fichero Qv:")
+print("'$fileqdi'	#>>>>>Escribe fichero Qdi:")
+print("")
